@@ -1,8 +1,8 @@
-(ns clj-playground.core)
+(ns clj-playground.xml-bad)
 (require '[clojure.java.io :as io])
 (require '[clojure.xml :as xml])
 
-; XML handling
+
 (def balance
   "<balance>
     <accountId>3764882</accountId>
@@ -52,7 +52,3 @@
                 (separate-words (clean-key item))
                 (format-decimals (item balance))))]
       (reduce transform {} (keys balance)))))
-
-(comment
-  (print-balance balance)
-  )
