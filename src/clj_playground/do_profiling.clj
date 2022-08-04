@@ -1,4 +1,4 @@
-(ns clj-playground.meta-data
+(ns clj-playground.do-profiling
   (:require [clj-playground.profilable :as profilable]))
 
 
