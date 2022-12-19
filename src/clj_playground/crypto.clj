@@ -39,7 +39,7 @@
 (comment
   (sign-request "http://example.com/tx/1")
   ;350 ms before type hinting
-  (time (dotimes [i 10000]
+  (time (dotimes [i 100000]
           (sign-request (str "http://example.com/tx" i))))
   ;47 ms after type hinting
 
